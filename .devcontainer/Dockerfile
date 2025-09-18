@@ -108,7 +108,7 @@ RUN curl -s https://fluxcd.io/install.sh | sudo bash
 # Install Rust to get access to the Rust CLI tools.
 RUN curl https://sh.rustup.rs/?version=1.66 -sSf | bash -s -- -y
 ENV PATH="${HOME}/.cargo/bin:${PATH}"
-RUN rustup target add wasm32-wasi
+RUN rustup target add wasm32-wasip1
 RUN rustup target add wasm32-unknown-unknown
 
 # Install some helpful WASM inspection tools like wasm2wat

@@ -33,7 +33,6 @@
       ]
     }
   },
-
   // Use 'forwardPorts' to make a list of ports inside the container available
   // locally.
   "forwardPorts": [
@@ -80,5 +79,5 @@
   // This matches up with the user created in the Dockerfile. For some reason
   // the node binary complains with weird permission denied errors when run
   // as root.
-  "remoteUser": "docker-user",
+  "remoteUser": "vscode",
 }
